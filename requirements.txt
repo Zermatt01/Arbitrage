@@ -1,0 +1,77 @@
+# ===================================
+# REQUIREMENTS.TXT
+# Bot d'Arbitrage Crypto
+# ===================================
+
+# === Core Trading Libraries ===
+ccxt==4.2.25                    # Unified API pour exchanges crypto
+python-binance==1.0.19          # API Binance spécifique (optionnel)
+
+# === Data Processing ===
+pandas==2.1.4                   # Manipulation de données
+numpy==1.26.3                   # Calculs numériques
+scipy==1.11.4                   # Calculs scientifiques
+
+# === Database ===
+sqlalchemy==2.0.25              # ORM pour base de données
+psycopg2-binary==2.9.9          # Driver PostgreSQL
+alembic==1.13.1                 # Migrations de base de données
+
+# === Async & Networking ===
+aiohttp==3.9.1                  # Requêtes HTTP asynchrones
+websockets==12.0                # WebSocket client
+asyncio==3.4.3                  # Programmation asynchrone
+requests==2.31.0                # Requêtes HTTP simples
+
+# === Configuration ===
+python-dotenv==1.0.0            # Variables d'environnement
+pyyaml==6.0.1                   # Fichiers de configuration YAML
+configparser==6.0.0             # Parser de fichiers INI
+
+# === Caching (Optionnel pour Phase 1) ===
+redis==5.0.1                    # Cache in-memory
+hiredis==2.3.2                  # Parser Redis rapide
+
+# === Monitoring & Logging ===
+prometheus-client==0.19.0       # Métriques Prometheus
+grafana-api==1.0.3              # API Grafana
+python-telegram-bot==20.7       # Bot Telegram pour alertes
+
+# === Testing ===
+pytest==7.4.3                   # Framework de test
+pytest-asyncio==0.23.2          # Tests async
+pytest-cov==4.1.0               # Coverage des tests
+pytest-mock==3.12.0             # Mocking pour tests
+
+# === Utilities ===
+python-dateutil==2.8.2          # Manipulation de dates
+pytz==2023.3                    # Gestion des fuseaux horaires
+schedule==1.2.0                 # Planification de tâches
+colorama==0.4.6                 # Couleurs dans le terminal
+tabulate==0.9.0                 # Tableaux formatés
+tqdm==4.66.1                    # Barres de progression
+
+# === Web Interface (Optionnel - Phase 6) ===
+flask==3.0.0                    # Framework web léger
+flask-cors==4.0.0               # CORS pour Flask
+jinja2==3.1.2                   # Templates HTML
+
+# === Data Visualization (Optionnel) ===
+matplotlib==3.8.2               # Graphiques
+plotly==5.18.0                  # Graphiques interactifs
+
+# === Security ===
+cryptography==41.0.7            # Cryptographie
+pycryptodome==3.19.0            # Crypto supplémentaire
+
+# === Development Tools ===
+black==23.12.1                  # Formatage du code
+pylint==3.0.3                   # Linter Python
+mypy==1.7.1                     # Type checking
+ipython==8.19.0                 # REPL amélioré
+jupyter==1.0.0                  # Notebooks (pour analyse)
+
+# === Notes ===
+# Installer avec: pip install -r requirements.txt
+# Pour dev: pip install -r requirements.txt --upgrade
+# Pour production: pip install -r requirements.txt --no-cache-dir
